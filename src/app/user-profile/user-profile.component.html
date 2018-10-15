@@ -1,0 +1,19 @@
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src={{User.photoProfil}} alt="Card image" style="width:100%">
+      <h4 class="card-title">Nom: {{User.nom}}</h4>
+      <h4 class="card-title">Prénom: {{User.prenom}}</h4>
+
+      <p class="card-text">{{User.citation}}</p>
+        <div>
+          <label>Citation:
+            <input [(ngModel)]="User.citation" placeholder="Les ogres sont... comme les oignons !">
+          </label>
+        </div>
+        <button class="btn btn-primary" (click)="inClick = !inClick">Age invisible</button>
+        <div [hidden] ="!inClick">
+          <p>Age: {{ User.age}}</p>
+        </div>
+  </div>
+
+
+

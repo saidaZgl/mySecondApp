@@ -8,7 +8,7 @@ import { Email } from '../userEmail';
 })
 export class SignUpComponent implements OnInit {
   email: Email = {
-    mail: 'wild@gmail.com',
+    mail: 'wildo@gmail.com',
   };
   constructor() { }
 
