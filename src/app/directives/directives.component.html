@@ -1,0 +1,13 @@
+<div *ngIf="showMovies">
+  <h1>Films à succès</h1>
+    <ul>
+      <li (mouseover)="isred()" (mouseleave)="isnotred()"class="film1" [ngClass]="{'color': isRed}">2004 L'Effet papillon</li>
+      <li>2005 : Match Point</li>
+      <li>2006	: Blood Diamond</li>
+      <li>2007 :	La graine et le mulet</li>
+      <li>2008 : Gran Torino</li>
+      <li>2009 : Avatar</li>
+      <li>2010 :	Inception</li>
+      <li>2011 	: Intouchables</li>
+    </ul>
+  </div>
